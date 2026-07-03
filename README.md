@@ -1,10 +1,10 @@
-# 🍄 Mycelium
+# 🎨 LiuBai
 
-> **Mycelium** — Super Assistant Framework
+> **LiuBai** — Super Assistant Framework
 
 > 超级助理 Agent 的完整系统脚手架
 >
-> Mycelium（菌丝网络）——自然界最高效的信息网络。无中心、持续生长、连接一切。
+> 留白——中国水墨最核心的构图智慧。不画的区域和画的一样重要，空不是无，空是可能性。框架只搭骨架，留出空白，让用户填入自己的世界。
 
 一个可复用的 Agent 系统框架，只搭骨架、装方法、留空位——不含任何个人设定、偏好或知识库沉淀。
 
