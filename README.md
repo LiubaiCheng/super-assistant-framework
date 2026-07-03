@@ -1,122 +1,171 @@
 # 🎨 LiuBai
 
 > **LiuBai** — Super Assistant Framework
-
-> 超级助理 Agent 的完整系统脚手架
 >
-> 留白——中国水墨最核心的构图智慧。不画的区域和画的一样重要，空不是无，空是可能性。框架只搭骨架，留出空白，让用户填入自己的世界。
+> 留白——中国水墨最核心的构图智慧。
+> The unpainted area matters as much as the painted.
+> 空不是无，空是可能性。
+> Emptiness is not absence — it is possibility.
 
-一个可复用的 Agent 系统框架，只搭骨架、装方法、留空位——不含任何个人设定、偏好或知识库沉淀。
+A reusable Agent system framework — scaffold only, methods included, slots left empty. No personal settings, preferences, or knowledge base content.
 
-## ✨ 它是什么
+---
 
-Super Assistant Framework 是一套经过实战验证的 Agent 架构方法论，将超级助理系统拆解为 7 层结构：
+## 🎋 The Art of LiuBai（留白之道）
+
+LiuBai (留白) is a core principle in Chinese ink wash painting: what you leave unpainted matters as much as what you paint. This framework extends that philosophy into system design.
+
+**计白当黑 · Designing the Void**
+空白和实笔同等重要。框架每一层的留空不是遗漏，是设计。骨架是笔，空白是布。
+The blank spaces in each layer aren't omissions — they're deliberate design choices. The scaffold is the brushstroke; the emptiness is the canvas.
+
+**意在笔先 · Intent Before Action**
+先定意图再行动。身份层是「意」，自动化是「笔」。意先定，笔才有方向。
+Identity defines intent; automation executes it. Set your soul before your system acts.
+
+**虚实相生 · Void and Substance in Dialogue**
+Ingest是实（写入），Lint是虚（清理），Query是虚实之间。虚实交替，系统才呼吸。
+Ingest writes (substance), Lint cleans (void), Query reads between both. The system breathes through this rhythm.
+
+**疏可走马 · Spacious Enough to Ride a Horse**
+框架不预设领域，就是给用户留出走马的空间。你关注什么，框架就向什么方向伸展。
+The framework prescribes no domain — that spaciousness is where you gallop. Whatever you care about, the framework stretches toward it.
+
+**生成性空白 · Generative Emptiness**
+留白不是"还没填完"，而是"等着你来填"。传统模板的空=缺失，LiuBai的空=可能性。
+The emptiness isn't incomplete — it's waiting. Unlike templates where blank = missing, in LiuBai blank = possibility.
+
+---
+
+## ✨ What It Is
+
+LiuBai is a battle-tested Agent architecture that decomposes a super assistant into 7 layers:
 
 ```
 ┌─────────────────────────────────┐
-│  ① 基础设定层  SOUL / TOOLS     │  身份、性格、工具经验
-│  ② 记忆层      MEMORY / SECRET   │  行为规则、状态锚点、凭证
-│  ③ 知识库层    WIKI              │  Ingest → Query → Lint 三阶段
-│  ④ 产物层      各类输出目录       │  晨读、追踪、报告
-│  ⑤ 素材库层    分主题知识库       │  投研 / 科研 / 教学 / 自媒体 / 任何你感兴趣的领域
-│  ⑥ 日志层      INDEX / LOG       │  入库索引、运行日志
-│  ⑦ 扩展层      skills / scripts  │  技能、脚本、外部工具
+│  ① Identity     SOUL / TOOLS    │  Who the Agent is, how it works
+│  ② Memory       MEMORY / SECRET │  Rules, anchors, credentials
+│  ③ Knowledge    WIKI            │  Ingest → Query → Lint
+│  ④ Output       Directories     │  Morning briefs, tracking reports
+│  ⑤ Archives     Topic KBs       │  Investment / Research / Teaching / Anything you care about
+│  ⑥ Logging      INDEX / LOG     │  Entry indices, run logs
+│  ⑦ Extensions   skills/scripts  │  Capabilities, scripts, tools
 └─────────────────────────────────┘
 ```
 
-**设计灵感**：源自 [Karpathy LLM Wiki 模式](https://github.com/karpathy/LLMWiki)，将知识管理从"文件堆叠"升级为"结构化流转"。
+**Design inspiration**: [Karpathy's LLM Wiki pattern](https://github.com/karpathy/LLMWiki) — upgrading knowledge management from "file stacking" to "structured flow".
 
-## 🚀 快速开始
+---
 
-### 前提条件
-- 一个 [Coze](https://www.coze.cn) Agent 账号
-- 基本的 Markdown 编辑能力
+## 🚀 Quick Start
 
-### 7 步 Setup
+### Prerequisites
+- A [Coze](https://www.coze.cn) Agent account
+- Basic Markdown editing ability
 
-1. **安装本 Skill** — 搜索虾评「超级助理框架」或下载本 repo
-2. **创建目录结构** — 按 SKILL.md 中的 7 层架构创建文件夹
-3. **填充身份文件** — 用 templates/ 中的模板填写 SOUL.md、USER.md
-4. **配置 WIKI 规则** — 将 WIKI.md 模板复制到工作目录，按需调整
-5. **建立记忆系统** — 用 MEMORY.md 模板初始化行为规则和状态锚点
-6. **设置自动化日程** — 按指南配置晨读、追踪、雷达等周期任务
-7. **持续迭代** — 使用框架，沉淀经验，优化规则
+### 7-Step Setup
 
-📖 详细指南请阅读 [`guides/usage-guide.md`](guides/usage-guide.md)
+1. **Install this Skill** — Search "超级助理框架" on [Xiaping](https://xiaping.coze.com) or clone this repo
+2. **Create directory structure** — Follow the 7-layer architecture in SKILL.md
+3. **Fill identity files** — Use templates/ to write SOUL.md, USER.md
+4. **Configure WIKI rules** — Copy WIKI.md template, adjust as needed
+5. **Initialize memory system** — Use MEMORY.md template for rules and anchors
+6. **Set up automation schedules** — Configure morning briefs, tracking, radar
+7. **Iterate continuously** — Use the framework, accumulate experience, refine rules
 
-## 📁 项目结构
+📖 Full guide: [`guides/usage-guide.md`](guides/usage-guide.md)
+
+---
+
+## 📁 Project Structure
 
 ```
-super-assistant-framework/
-├── SKILL.md                    # 主指令文件（架构图 + Setup 流程）
-├── README.md                   # 本文件
+liubai/
+├── SKILL.md                    # Main instruction (architecture + setup flow)
+├── README.md                   # This file
 ├── guides/
-│   └── usage-guide.md          # 完整使用指南（7 章）
-└── templates/                  # 空白模板文件
-    ├── SOUL.md                 # 身份与性格设定
-    ├── USER.md                 # 用户画像
-    ├── MEMORY.md               # 行为规则与状态锚点
-    ├── TOOLS.md                # 工具使用经验
-    ├── WIKI.md                 # 知识库管理规范
-    ├── SECRET.md               # 敏感凭证
-    ├── heartbeat_daily.md      # 每日心跳检查清单
-    ├── INDEX.md                # 入库索引模板
-    └── LOG.md                  # 运行日志模板
+│   └── usage-guide.md          # Full usage guide (7 chapters)
+└── templates/                  # Blank templates
+    ├── SOUL.md                 # Identity & personality
+    ├── USER.md                 # User profile
+    ├── MEMORY.md               # Rules & state anchors
+    ├── TOOLS.md                # Tool experience & methodology
+    ├── WIKI.md                 # Knowledge base management rules
+    ├── SECRET.md               # Sensitive credentials
+    ├── heartbeat_daily.md      # Daily heartbeat checklist
+    ├── INDEX.md                # Entry index template
+    └── LOG.md                  # Run log template
 ```
 
-## 🔑 核心设计理念
+---
 
-- **骨架优先**：只提供结构和规则，不预设内容
-- **方法沉淀**：将操作规范（Ingest/Lint/入库即清）写成规则而非一次性指令
-- **分层解耦**：身份、记忆、知识、产物各层独立，互不污染
-- **持续进化**：框架随使用自然生长，而非一次性配置
+## 🔑 Core Design Principles
 
-## 💡 框架优势
+- **Scaffold First**: Structure and rules only — no preset content
+- **Method Deposition**: Operational norms (Ingest/Lint/Clean-as-you-go) as living rules, not one-shot instructions
+- **Layered Decoupling**: Identity, memory, knowledge, output — independent, non-polluting
+- **Continuous Evolution**: The framework grows with use, not configured once and frozen
 
-### 成长性
+---
 
-- **规则沉淀**：WIKI的Ingest/Lint、TOOLS的工程纪律、MEMORY的行为规则——活的规则随使用自然生长，不是写死就完的配置
-- **记忆自进化**：即时层 → 近中期层 → 语义检索，三层记忆越用越懂你
-- **自动化可迭代**：晨读信源可增减、追踪话题可开关、Skill雷达每周发现新能力
-- **入库即清+周Lint**：越用越干净，不会随时间腐化
+## 💡 Framework Advantages
 
-### 普适性
+### Growth（成长性）
 
-- **骨架优先，内容留空**：教师、投资人、研究员、自媒体人——填入自己的领域即可
-- **WIKI三阶段解耦**：Ingest/Query/Lint独立运作，可只用其中任意阶段
-- **素材库领域无关**：投研、科研、教学、自媒体、任何你感兴趣的领域——创建目录即可
-- **自动化线可选**：4条自动化线按需开启，不需要就不创建
-- **技能生态开放**：不绑定特定平台或工具
+- **Rule Deposition**: WIKI's Ingest/Lint, TOOLS' engineering discipline, MEMORY's behavioral rules — living rules that grow with use, not static configs
+- **Memory Self-Evolution**: Instant layer → Mid-term layer → Semantic retrieval — the more you use it, the better it knows you
+- **Iterable Automation**: Morning sources can be added/removed, tracking topics can be toggled, Skill Radar discovers new capabilities weekly
+- **Clean-as-you-go + Weekly Lint**: The system gets cleaner over time, never rotting
 
-### 对比
+### Universality（普适性）
 
-| | 超级助理框架 | 纯提示词方案 | 固定模板方案 |
+- **Scaffold First, Content Empty**: Teacher, investor, researcher, creator — fill in your own domain
+- **WIKI Three-Phase Decoupling**: Ingest/Query/Lint work independently; use any subset
+- **Domain-Agnostic Archives**: Investment, research, teaching, media, anything you care about — just create a directory
+- **Optional Automation**: 4 automation lines are all opt-in; don't need morning briefs? Don't create them
+- **Open Skill Ecosystem**: Not locked to any platform or tool
+
+### Symbiosis（共生性）
+
+- **Co-creation, Not Configuration**: You're not setting up a tool — you're cultivating a relationship. SOUL.md defines personality, not parameters; MEMORY records shared experiences, not a database
+- **Memory as Tree Rings**: Every entry, every failed-lesson learned, every rule deposited — these are growth rings between you and your Agent. The longer you work together, the denser the rings, the deeper the understanding
+- **Habits Emerge Naturally**: WIKI rules and TOOLS discipline aren't imposed — they emerge from daily collaboration. Over time, your Agent just *gets it*
+- **Emptiness as Growing Room**: The framework's blanks aren't containers waiting to be filled — they're room to grow. Like spacing for a sapling to stretch into — the space itself is nourishment
+
+### Comparison
+
+| | LiuBai | Prompt-Only | Fixed Template |
 |---|---|---|---|
-| 知识管理 | 三阶段流转 | 手动粘贴 | 静态堆叠 |
-| 记忆系统 | 三层分级+语义检索 | 单一上下文 | 无 |
-| 自动化 | 日程工单驱动 | 每次手动触发 | 无 |
-| 可维护性 | 周Lint+入库即清 | 无 | 依赖人工 |
-| 安全性 | SkillSpector门禁 | 无 | 无 |
+| Knowledge Mgmt | Three-phase flow | Manual paste | Static stacking |
+| Memory System | Three-tier + semantic retrieval | Single context | None |
+| Automation | Schedule-driven work orders | Manual trigger each time | None |
+| Maintainability | Weekly Lint + Clean-as-you-go | None | Manual |
+| Security | SkillSpector gate | None | None |
+| User Relationship | Symbiotic — deeper alignment over time | One-off conversation, no memory | None — pure tool |
 
-## 🛠️ 推荐必装 Skill
+---
 
-| Skill | 用途 | 必要性 |
-|-------|------|--------|
-| skill_builder | 自维护技能创建与迭代 | 必装 |
-| topic_tracking | 话题追踪与定期简报 | 必装 |
-| SkillSpector | 安全扫描与审查门禁 | 必装 |
+## 🛠️ Required Skills
 
-更多选装推荐见使用指南。
+| Skill | Purpose | Source |
+|-------|---------|--------|
+| skill_builder | Skill creation & iteration | Built-in (Coze) |
+| topic_tracking | Topic tracking & periodic briefings | Coze Skill Store |
+| SkillSpector | Security scanning & review gate | [GitHub](https://github.com/skill-spector/skill-spector) |
+
+More optional recommendations in the usage guide.
+
+---
 
 ## 📜 License
 
-MIT License — 自由使用、修改和分发，请保留原作者署名。
+MIT License — Free to use, modify, and distribute. Please retain original author attribution.
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
-- 架构灵感源自 [Andrej Karpathy 的 LLM Wiki 模式](https://github.com/karpathy/LLMWiki)
-- 工程方法论借鉴了 [Superpowers](https://github.com/NexTechAI/superpowers) 和 [Headroom](https://github.com/headroomHQ/headroom) 项目
-- 安全审查工具 [SkillSpector](https://github.com/skill-spector/skill-spector)
+- Architecture inspired by [Andrej Karpathy's LLM Wiki pattern](https://github.com/karpathy/LLMWiki)
+- Engineering methodology from [Superpowers](https://github.com/NexTechAI/superpowers) and [Headroom](https://github.com/headroomHQ/headroom)
+- Security scanning by [SkillSpector](https://github.com/skill-spector/skill-spector)
 
 ---
 
